@@ -1,0 +1,51 @@
+.config {
+  background-color: transparent;
+  color: #fff;
+  align-items: center;
+  flex-direction: column;
+  font-family: "San Francisco", Helvetica, Arial;
+  font-size: 14px;
+}
+.config_title {
+  margin: 15px 0px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.position {
+  margin-left: 15px;
+}
+.position_select {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+.position_select select {
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  left: 10px;
+}
+.position_btn {
+  margin: 10px 10px;
+}
+.property {
+  margin: 10px 10px;
+}
+.property input {
+  width: 80%;
+  height: 25px;
+}
+.property select {
+  width: 95%;
+  height: 35px;
+}
+.property .btnGroup {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.property .delete {
+  display: flex;
+  justify-content: center;
+}

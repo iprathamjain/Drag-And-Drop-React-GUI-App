@@ -29,7 +29,7 @@ function Appcontainer() {
         getCurrentEle={getCurrentEle}
         getCurrentPos={getCurrentPos}
       />
-      <div className="txt">Drag and Drop Components Here.</div>
+      <p className="txt"> Drag & Drop Components Here.</p>
     </div>
   );
 }

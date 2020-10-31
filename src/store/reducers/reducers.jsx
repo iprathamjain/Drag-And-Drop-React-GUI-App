@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { Components } from "./componentReducer";
-import { Canvas } from "./canvasReducer";
+import { Components } from "./componentReducers";
+import { Canvas } from "./canvasReducers";
 
 const RootReducer = combineReducers({ Components, Canvas });
 

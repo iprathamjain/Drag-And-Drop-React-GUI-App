@@ -1,7 +1,7 @@
-export const saveTemplate = (val) => {
+export const saveTemplate = (data) => {
     return {
       type: "SAVE_TEMPLATE",
-      val,
+      data,
     };
   };
   
