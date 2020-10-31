@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
 import { createElement } from "../helper/helper";
-import "./canvas.scss";
+import "./canvas.css";
 
 function Canvas(props) {
   useEffect(() => {
@@ -57,7 +57,7 @@ function Canvas(props) {
       } else if (ele.nodeName === "BUTTON") {
         ele.style.border = "1px solid transparent";
       } else {
-        ele.style.border = "1px solid #ccc";
+        ele.style.border = "1px solid #000";
       }
     }
   };

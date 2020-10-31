@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import "./items.scss";
+import "./items.css";
 
 function Item(props) {
   const dragStart = (e) => {
@@ -22,8 +22,8 @@ function Item(props) {
 
   return (
     <div className="col flex-1 item">
-      <div className="item__title">Components</div>
-      <div className="item__components">
+      <div className="item_title">Components</div>
+      <div className="item_components">
         <p>Elements</p>
         {wireframes.map((item) => {
           return (

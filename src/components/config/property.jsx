@@ -24,10 +24,9 @@ function Property(props) {
 
 export { Property };
 
-// For Div and Textarea Element
 const divHook = (ele, props, name) => {
   let data = {
-    width: "200",
+    width: "400",
     height: "100",
     bg: "",
     placeholder: "",
@@ -45,7 +44,6 @@ const divHook = (ele, props, name) => {
     }
   };
 
-  // Entirely remove the element from parent
   const deleteHandle = () => {
     ele.remove();
     props.getCurrentEle(null);
@@ -54,7 +52,7 @@ const divHook = (ele, props, name) => {
   const cancelHandle = () => {
     props.getCurrentEle(null);
     if (name === "TEXTAREA") {
-      ele.style.border = "1px solid #ccc";
+      ele.style.border = "1px solid #000";
     }
     ele.style.border = "1px solid black";
   };
@@ -117,7 +115,6 @@ const divHook = (ele, props, name) => {
   return divBlock;
 };
 
-// For Input Element
 const inputHook = (ele, props) => {
   let data = { type: "text", placeholder: "" };
   const changeHandle = (e) => {
@@ -129,11 +126,10 @@ const inputHook = (ele, props) => {
     if (data.type === "button") {
       ele.innerHTML = "Click Here";
       ele.classList.remove("form-item");
-      ele.classList.add("button");
+      ele.classList.add("button")
     }
   };
 
-  // Entirely remove the element from parent
   const deleteHandle = () => {
     ele.remove();
     props.getCurrentEle(null);
@@ -141,7 +137,7 @@ const inputHook = (ele, props) => {
 
   const cancelHandle = () => {
     props.getCurrentEle(null);
-    ele.style.border = "1px solid #ccc";
+    ele.style.border = "1px solid #000";
   };
   let inputBlock = (
     <div>
@@ -161,7 +157,7 @@ const inputHook = (ele, props) => {
         onChange={changeHandle}
       ></input>
       <div className="btnGroup">
-        <button type="submit" className="button warning" onClick={submitHandle}>
+        <button type="submit" className="button success" onClick={submitHandle}>
           Submit
         </button>
         <button type="submit" className="button secondary" onClick={cancelHandle}>
@@ -176,7 +172,6 @@ const inputHook = (ele, props) => {
   return inputBlock;
 };
 
-// For button Element
 const buttonHook = (ele, props) => {
   let data = { text: "Click Here", type: "primary" };
   const changeHandle = (e) => {
@@ -190,7 +185,6 @@ const buttonHook = (ele, props) => {
       : ele.classList.add("boardEle", "button", data.type);
   };
 
-  // Entirely remove the element from parent
   const deleteHandle = () => {
     ele.remove();
     props.getCurrentEle(null);
@@ -219,7 +213,7 @@ const buttonHook = (ele, props) => {
         onChange={changeHandle}
       ></input>
       <div className="btnGroup">
-        <button type="submit" className="button warning" onClick={submitHandle}>
+        <button type="submit" className="button success" onClick={submitHandle}>
           Submit
         </button>
         <button type="submit" className="button secondary" onClick={cancelHandle}>

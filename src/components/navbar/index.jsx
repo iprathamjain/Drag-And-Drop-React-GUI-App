@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
+import { saveTemplate, clearTemplate } from "../../store/actions/canvasAction";
 import logo from "../../assets/logo.png";
 
 function Navbar(props) {
@@ -35,7 +36,7 @@ function Navbar(props) {
           Clear
         </button>
         <button className="button neon" onClick={handlePublish}>
-          Publish
+          Preview
         </button>
       </div>
     </div>
