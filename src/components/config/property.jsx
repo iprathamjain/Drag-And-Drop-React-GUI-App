@@ -1,7 +1,7 @@
 import React from "react";
 
 function Property(props) {
-  let ele = document.getElementById(props.currentElt);
+  let ele = document.getElementById(props.currentEle);
   let name = ele.nodeName;
   let renderDiv =
     name === "DIV" || name === "TEXTAREA" ? (
@@ -186,8 +186,8 @@ const buttonHook = (ele, props) => {
     ele.innerHTML = data.text;
     ele.className = "";
     data.type === ""
-      ? ele.classList.add("boardElt", "button")
-      : ele.classList.add("boardElt", "button", data.type);
+      ? ele.classList.add("boardEle", "button")
+      : ele.classList.add("boardEle", "button", data.type);
   };
 
   // Entirely remove the element from parent

@@ -18,11 +18,11 @@ function Canvas(props) {
     let width = document.getElementById("canvas").offsetWidth - 38;
     const card_id = e.dataTransfer.getData("card_id");
     if (card_id.length === 6) {
-      let elt = document.getElementById(card_id);
-      elt.style.position = "absolute";
-      elt.style.left = e.clientX + "px";
-      elt.style.top = e.clientY + "px";
-      e.target.appendChild(elt);
+      let ele = document.getElementById(card_id);
+      ele.style.position = "absolute";
+      ele.style.left = e.clientX + "px";
+      ele.style.top = e.clientY + "px";
+      e.target.appendChild(ele);
     } else if (props.currentPos === "absolute") {
       let dm = createElement(card_id, width);
       dm.style.position = "absolute";
@@ -43,21 +43,21 @@ function Canvas(props) {
   };
 
   const handleClick = (e) => {
-    let els = document.getElementsByClassName("canvasElt");
+    let els = document.getElementsByClassName("canvasEle");
     if (e.target.id === "canvas") {
-      props.getCurrentElt(null);
+      props.getCurrentEle(null);
     }
     for (let i = 0; i < els.length; i++) {
-      let elt = document.getElementById(els[i].id);
+      let ele = document.getElementById(els[i].id);
       if (els[i].id === e.target.id) {
-        elt.style.border = "2px dotted red";
-        props.getCurrentElt(e.target.id);
-      } else if (elt.nodeName === "DIV") {
-        elt.style.border = "1px solid black";
-      } else if (elt.nodeName === "BUTTON") {
-        elt.style.border = "1px solid transparent";
+        ele.style.border = "2px dotted red";
+        props.getCurrentEle(e.target.id);
+      } else if (ele.nodeName === "DIV") {
+        ele.style.border = "1px solid black";
+      } else if (ele.nodeName === "BUTTON") {
+        ele.style.border = "1px solid transparent";
       } else {
-        elt.style.border = "1px solid #ccc";
+        ele.style.border = "1px solid #ccc";
       }
     }
   };

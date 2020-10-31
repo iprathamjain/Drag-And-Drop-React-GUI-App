@@ -12,7 +12,7 @@ const createElement = (id, width) => {
       return createInput(id);
     case "textfield":
       return createTextField(id);
-    case "buttonElt":
+    case "buttonEle":
       return createButton(id);
     case "heading":
       return createHeader(id);
@@ -30,7 +30,7 @@ const createRandomId = () => {
 const createDiv = (id) => {
   let div = document.createElement(id);
   div.id = `${createRandomId()}`;
-  div.classList.add("canvasElt");
+  div.classList.add("canvasEle");
   div.style.border = "1px solid black";
   div.style.width = "200px";
   div.style.height = "100px";
@@ -43,7 +43,7 @@ const createBlock = (id, width) => {
   let str = id === "headerDiv" ? "Header" : "Footer";
   let div = document.createElement("div");
   div.id = `${createRandomId()}`;
-  div.classList.add("canvasElt");
+  div.classList.add("canvasEle");
   div.style.width = width + "px";
   div.style.background = "#333";
   div.style.color = "#fff";
@@ -59,7 +59,7 @@ const createBlock = (id, width) => {
 const createInput = (id) => {
   let input = document.createElement(id);
   input.id = `${createRandomId()}`;
-  input.classList.add("canvasElt", "form-item");
+  input.classList.add("canvasEle", "form-item");
   input.style.cursor = "pointer";
   input.setAttribute("draggable", "true");
   return input;
@@ -68,7 +68,7 @@ const createInput = (id) => {
 const createTextField = (id) => {
   let textfield = document.createElement("textarea");
   textfield.id = `${createRandomId()}`;
-  textfield.classList.add("canvasElt", "form-item");
+  textfield.classList.add("canvasEle", "form-item");
   textfield.style.cursor = "pointer";
   textfield.setAttribute("draggable", "true");
   return textfield;
@@ -77,7 +77,7 @@ const createTextField = (id) => {
 const createButton = (id) => {
   let button = document.createElement("button");
   button.id = `${createRandomId()}`;
-  button.classList.add("canvasElt", "button");
+  button.classList.add("canvasEle", "button");
   button.innerHTML = "Click Here";
   button.style.cursor = "pointer";
   button.setAttribute("draggable", "true");
