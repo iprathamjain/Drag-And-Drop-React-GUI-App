@@ -9,10 +9,10 @@ function Config(props) {
     <div className="col flex-1 config">
       <p className="config_title">Configuration</p>
       <SetPosition getCurrentPos={props.getCurrentPos} />
-      {props.currentElt === null ? null : (
+      {props.currentEle === null ? null : (
         <Property
-          currentElt={props.currentElt}
-          getCurrentElt={props.getCurrentElt}
+          currentEle={props.currentEle}
+          getCurrentEle={props.getCurrentEle}
         />
       )}
     </div>
