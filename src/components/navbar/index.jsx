@@ -1,18 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { saveTemplate, clearTemplate } from "../../store/actions/boardActions";
 import logo from "../../assets/logo.png";
 
 function Navbar(props) {
-  // Clearing the canvas
+  // Clear the canvas
   const handleClear = () => {
     document.getElementById("canvas").innerHTML = null;
     document.querySelector(".txt").style.display = "block";
     props.onClear();
   };
 
-  // Saving the template
+  // Save the template
   const handleSave = () => {
     let data = document.getElementById("canvas").innerHTML;
     props.onSave(data);
@@ -21,13 +20,14 @@ function Navbar(props) {
 
   // Export as HTML
   const handlePublish = () => {
-    generateHtml();          
+    generateHtml();
   };
+
   return (
     <div className="navbar">
-      <img src={logo} alt="logo" className="navbar__logo" />
-      <p className="navbar__title">React UI Builder</p>
-      <div className="navbar__btns">
+      <img src={logo} alt="logo" className="navbar_logo" />
+      <p className="navbar_brand">React GUI Builder</p>
+      <div className="navbar_btn">
         <button className="button-outline transparent" onClick={handleSave}>
           Save
         </button>
@@ -55,7 +55,7 @@ const mapDispatchToProps = (dispatch) => {
 
 export default connect(null, mapDispatchToProps)(Navbar);
 
-// Getting CSS and Div contents and export as HTML file
+// Fetch DOM contents and export as HTML file
 const generateHtml = () => {
   let cssText = document.getElementsByTagName("style")[0].firstChild.data;
   let windowContent =
