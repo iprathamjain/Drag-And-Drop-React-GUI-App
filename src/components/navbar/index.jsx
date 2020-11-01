@@ -19,24 +19,16 @@ function Navbar(props) {
     console.log(data);
   };
 
-  // Export as HTML
-  const handlePublish = () => {
-    generateHtml();
-  };
-
   return (
     <div className="navbar">
       <img src={logo} alt="logo" className="navbar_logo" />
       <p className="navbar_brand">React GUI Builder</p>
       <div className="navbar_btn">
-        <button className="button-outline transparent" onClick={handleSave}>
+        <button className="button-outline s-transparent" onClick={handleSave}>
           Save
         </button>
-        <button className="button-outline transparent" onClick={handleClear}>
+        <button className="button-outline a-transparent" onClick={handleClear}>
           Clear
-        </button>
-        <button className="button neon" onClick={handlePublish}>
-          Preview
         </button>
       </div>
     </div>
@@ -55,25 +47,3 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(null, mapDispatchToProps)(Navbar);
-
-// Fetch DOM contents and export as HTML file
-const generateHtml = () => {
-  let cssText = document.getElementsByTagName("style")[0].firstChild.data;
-  let windowContent =
-    "<!DOCTYPE html><html><head><title>Build from React UI Builder</title></head><style lang='scss'>";
-  windowContent +=
-    cssText +
-    "</style><body>" +
-    document.getElementById("canvas").innerHTML +
-    "</body></html>";
-  let element = document.createElement("a");
-  element.setAttribute(
-    "href",
-    "data:text/html;charset=utf-8," + encodeURIComponent(windowContent)
-  );
-  element.setAttribute("download", "Build file");
-  element.style.display = "none";
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-};

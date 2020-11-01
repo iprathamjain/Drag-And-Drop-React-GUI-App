@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
-import { createElement } from "../helper/helper";
+import { createElement } from "../helper/helper.jsx";
 import "./canvas.css";
 
 function Canvas(props) {

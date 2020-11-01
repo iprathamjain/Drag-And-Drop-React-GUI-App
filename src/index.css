@@ -20,7 +20,7 @@ html, body {
   margin-left: 2%;
 }
 .navbar_brand {
-  margin-left: 1%;
+  margin-left: 2%;
   font-size: large;
   color: #f8f9fa;
 }
@@ -29,10 +29,10 @@ html, body {
   display: flex;
   justify-content: space-around;
   top: 10px;
-  right: 20px;
-  width: 15%;
+  right: 50px;
+  width: 10%;
 }
-/* -- app container -- */
+
 .app-container {
   display: flex;
   justify-content: space-around;
@@ -142,6 +142,29 @@ html, body {
   color: #fff;
   background-color: #27272f;
 }
+
+.s-transparent {
+  color: #fff;
+  border-color: #28a745;
+  background-color: transparent;
+}
+.s-transparent:hover {
+  color: #000;
+  border-color: #000;
+  background-color: #28a745;
+}
+
+.a-transparent {
+  color: #fff;
+  border-color: #ff615b;
+  background-color: transparent;
+}
+.a-transparent:hover {
+  color: #000;
+  border-color: #000;
+  background-color: #ff615b;
+}
+
 .primary {
   color: #fff;
   background-color: #2170f4;

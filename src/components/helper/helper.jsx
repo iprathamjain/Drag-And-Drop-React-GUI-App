@@ -12,7 +12,7 @@ const createElement = (id, width) => {
       return createInput(id);
     case "textfield":
       return createTextField(id);
-    case "buttonEle":
+    case "buttonElt":
       return createButton(id);
     case "heading":
       return createHeader(id);

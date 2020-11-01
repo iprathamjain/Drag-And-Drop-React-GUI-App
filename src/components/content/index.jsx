@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import "./items.css";
+import "./contents.css";
 
-function Item(props) {
+function Content(props) {
   const dragStart = (e) => {
     const target = e.target;
     if (props.currentPos === "absolute") {
@@ -21,9 +21,9 @@ function Item(props) {
   const { wireframes, formfields, textElements } = props;
 
   return (
-    <div className="col flex-1 item">
-      <div className="item_title">Components</div>
-      <div className="item_components">
+    <div className="col flex-1 content">
+      <div className="content_title">Components</div>
+      <div className="content_components">
         <p>Elements</p>
         {wireframes.map((item) => {
           return (
@@ -75,4 +75,4 @@ const mapStateToProps = (state) => {
   return state.Components;
 };
 
-export default connect(mapStateToProps, null)(Item);
+export default connect(mapStateToProps, null)(Content);
