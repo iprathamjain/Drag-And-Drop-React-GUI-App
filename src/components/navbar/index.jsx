@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { saveTemplate, clearTemplate } from "../../store/actions/canvasAction";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/msd-logo.svg";
 
 function Navbar(props) {
   // Clear the canvas
