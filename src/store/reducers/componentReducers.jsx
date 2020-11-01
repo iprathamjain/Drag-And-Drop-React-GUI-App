@@ -1,5 +1,5 @@
 const initState = {
-  elementBlocks: [
+  wireframes: [
     { name: "Div Block", id: "div" },
     { name: "Header Block", id: "headerDiv" },
     { name: "Footer Block", id: "footerDiv" },
