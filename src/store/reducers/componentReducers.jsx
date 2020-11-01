@@ -4,10 +4,10 @@ const initState = {
     { name: "Header Block", id: "headerDiv" },
     { name: "Footer Block", id: "footerDiv" },
   ],
-  formFields: [
+  formfields: [
     { name: "Input Field", id: "input" },
     { name: "Text Field", id: "textfield" },
-    { name: "Button", id: "buttonEle" },
+    { name: "Button", id: "buttonElt" },
   ],
   textElements: [
     { name: "Heading", id: "heading" },

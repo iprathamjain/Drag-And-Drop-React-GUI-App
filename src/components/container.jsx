@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Item from "./items";
+import Content from "./content";
 import { Config } from "./config";
 import Canvas from "./canvas";
 
@@ -18,7 +18,7 @@ function Appcontainer() {
 
   return (
     <div className="app-container">
-      <Item currentPos={currentPos} />
+      <Content currentPos={currentPos} />
       <Canvas
         currentPos={currentPos}
         currentEle={currentEle}

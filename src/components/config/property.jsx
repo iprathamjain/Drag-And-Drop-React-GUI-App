@@ -82,7 +82,7 @@ const divHook = (ele, props, name) => {
           <input
             id="placeholder"
             className="form-item"
-            placeholder="Enter Plcaeholder"
+            placeholder="Enter Placeholder"
             defaultValue={data.placeholder}
             onChange={changeHandle}
           ></input>

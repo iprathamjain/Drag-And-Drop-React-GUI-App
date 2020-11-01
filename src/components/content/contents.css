@@ -1,4 +1,4 @@
-.item {
+.content {
   background-color: transparent;
   color: #fff;
   align-items: center;
@@ -6,16 +6,16 @@
   left: 0;
   top: 0;
 }
-.item_title {
+.content_title {
   margin: 15px 0px;
   text-align: center;
   font-weight: bold;
 }
-.item_components p {
+.content_components p {
   padding: 0px 20px;
   color: #f5f9fc;
 }
-.item_components li {
+.content_components li {
   list-style-type: none;
   background: #27272f;
   color: #fff;
