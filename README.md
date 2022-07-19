@@ -26,7 +26,7 @@ To Deploy App locally:
 `npm run build` \
 `serve -s build`
 
-Take a look :)
+
 
 https://react-gui-builder.akashm398.vercel.app/
 
