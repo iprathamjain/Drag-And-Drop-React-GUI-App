@@ -6,7 +6,7 @@ GUI Builder is a web application which helps the users to drag and drop UI compo
 
 To Clone the project: 
 
-`git clone https://github.com/AkashM398/React-GUI-Builder.git`
+`git clone https://github.com/iprathamjain/React-GUI-Builder.git`
 
 To install necessary packages: 
 
@@ -28,5 +28,5 @@ To Deploy App locally:
 
 
 
-https://react-gui-builder.akashm398.vercel.app/
+
 
